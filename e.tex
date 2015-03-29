@@ -1,7 +1,11 @@
 %!TEX program = xelatex
 \documentclass{ecustenglishminorthesis}
-%\usepackage{showframe}
+% \usepackage{showframe}
+
 \usepackage{datetime}
+
+\newcommand{\thesistitle}{Analysis on \textit{Frankenstein; or, The Modern Prometheus} from the Perspective of Moral Psychology}
+
 \hypersetup{
   pdfinfo={
     Author={dagnaf},
@@ -12,18 +16,20 @@
     Subject={Moral Psychology in Frankenstein}
   }
 }
+
 \begin{document}
 \docinit
-\include{a}
+\input{e/a}
 \mktableofcontents
-\include{c1}
-\include{c2}
-\include{c3}
-\include{c4}
+\input{e/c1}
+\input{e/c2}
+\input{e/c3}
+\input{e/c4}
 \bibliography{e.bib}
-\include{ack}
+\input{e/ack}
 \end{document}
 
+% words count not updated
 % thesis                           3000 3696
 %
 % 1 Introduction                    200  291
